@@ -1,16 +1,16 @@
 1. Run the program with the following flags: ./process-run.py
    -l 5:100,5:100. What should the CPU utilization be (e.g., the
    percent of time the CPU is in use?) Why do you know this? Use the
-   -c and -p flags to see if you were right.
+   -c and -p flags to see if you were right.  
    Answer: 100 percent.
 3. Now run with these flags: ./process-run.py -l 4:100,1:0.
    These flags specify one process with 4 instructions (all to use the
    CPU), and one that simply issues an I/O and waits for it to be done.
    How long does it take to complete both processes? Use -c and -p
-   to find out if you were right.
+   to find out if you were right.  
    Answer:11 seconds
 5. Now switch the order of the processes: ./process-run.py -l
-   1:0,4:100. What happens now? Does switching the order matter? Why? (As always, use -c and -p to see if you were right)
+   1:0,4:100. What happens now? Does switching the order matter? Why? (As always, use -c and -p to see if you were right)  
    Answer:4 seconds
 7. We’ll now explore some of the other flags. One important flag is -S,
    which determines how the system reacts when a process issues an
