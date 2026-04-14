@@ -33,4 +33,5 @@ main(int argc, char* argv[]){
     char* text = "Hi,This is the parent\n";
     write(file,text,strlen(text));
   }
+  close(file);
 }
