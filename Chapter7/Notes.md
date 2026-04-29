@@ -20,6 +20,10 @@ Now relax 3: If we can interrupt or preempt processes before
 they complete we can implement another scheduler (**Shortest Job to completion First**)
 **SJTC**   . It will check each time a new job arrives and run the one which has the 
 least time left to complete and run that one.  
-
-  
+Response time is another problem. If we have to wait for a process finish
+before another can respond its a bad deal. 
+So what we can do is we can employ a time-shared scheduler.  
+**Round Robin**
+: A job runs for a time slice(called time quantum or scheduling quantum , its a fixed unit of time) 
+The time slice must be a 
 
