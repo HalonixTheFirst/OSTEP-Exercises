@@ -18,4 +18,8 @@ still have to wait if they arrive even a little later than a
 larger process_ (Convoy effect)  
 Now relax 3: If we can interrupt or preempt processes before
 they complete we can implement another scheduler (**Shortest Job to completion First**)
-**SJTC**  
+**SJTC**   . It will check each time a new job arrives and run the one which has the 
+least time left to complete and run that one.  
+
+  
+
