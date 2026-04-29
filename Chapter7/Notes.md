@@ -25,5 +25,21 @@ before another can respond its a bad deal.
 So what we can do is we can employ a time-shared scheduler.  
 **Round Robin**
 : A job runs for a time slice(called time quantum or scheduling quantum , its a fixed unit of time) 
-The time slice must be a 
+The time slice must be a multiple of the interrupt timer.  
+_The general technique of amortization is commonly used in systems
+when there is a fixed cost to some operation. By incurring that cost less
+often (i.e., by performing the operation fewer times), the total cost to the
+system is reduced. For example, if the time slice is set to 10 ms, and the
+context-switch cost is 1 ms, roughly 10% of time is spent context switching and is thus wasted. If we want to amortize this cost, we can increase
+the time slice, e.g., to 100 ms. In this case, less than 1% of time is spent
+context switching, and thus the cost of time-slicing has been amortized._  
+Note : Fairness will not be good with turnaround time
+and unfairness will not be good for response time.  
+Relax assumption 4: If a process does some i/o . It can be stopped after it goes into blocked state and another 
+process can run.  
+Relax assumption 5: The os ofcourse doesn't know how long each process will run for so 
+we can not do anything about it _yet_  .
+
+
+
 
