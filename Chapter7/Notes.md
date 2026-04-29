@@ -16,4 +16,6 @@ we can employ **SJF**
 If we relax 2 : SJF wont be optimal because _shorter processes might
 still have to wait if they arrive even a little later than a 
 larger process_ (Convoy effect)  
-
+Now relax 3: If we can interrupt or preempt processes before
+they complete we can implement another scheduler (**Shortest Job to completion First**)
+**SJTC**  
